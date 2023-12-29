@@ -1,3 +1,21 @@
+export const NAV_ITEMS = [
+  {
+    id: "home",
+    name: "Home",
+    link: "",
+  },
+  {
+    id: "about",
+    name: "About",
+    link: "",
+  },
+  {
+    id: "contact",
+    name: "Contact",
+    link: "",
+  },
+];
+
 export const PROJECTS = [
   {
     id: 1,

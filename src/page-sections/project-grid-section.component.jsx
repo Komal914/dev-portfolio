@@ -1,5 +1,5 @@
-import { PROJECTS } from "../projects";
-import ProjectTile from "../components/project-tile/project-tile.component";
+import { PROJECTS } from "../DATA";
+import ProjectTile from "../components/shared-components/project-tile/project-tile.component";
 
 const ProjectGridSection = () => {
   return (
