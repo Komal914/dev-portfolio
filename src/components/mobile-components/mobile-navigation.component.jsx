@@ -1,10 +1,12 @@
 import { Fragment } from "react";
+import { ReactComponent as MenuLogo } from "../../assets/menu.svg";
 
 const MobileNavigation = () => {
   return (
-    <Fragment>
+    <nav className="flex justify-between w-full align-middle top-0 z-20 bg-pink">
       <h1>i am mobile navigation</h1>
-    </Fragment>
+      <MenuLogo className="m-4 h-6 w-6 z-1"></MenuLogo>
+    </nav>
   );
 };
 

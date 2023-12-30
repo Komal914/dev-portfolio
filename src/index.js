@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { MobileModeContextProvider } from "./context/mobileModeContext";
 import reportWebVitals from "./reportWebVitals";
+import { MobileModeContextProvider } from "./context/mobileModeContext";
 import App from "./App";
 import "./index.css";
 
