@@ -4,7 +4,7 @@ import { NAV_ITEMS } from "../../DATA";
 
 const DesktopNavigation = () => {
   return (
-    <nav className="flex justify-between w-full align-middle fixed top-0 z-20 bg-black">
+    <nav className="flex justify-between w-full align-middle fixed top-0 z-2 bg-black">
       <div className="p-2 align-middle">
         <KKLogo className="xl:size-20 lg:size-18 md:size-15 sm:size-14"></KKLogo>
       </div>
