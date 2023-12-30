@@ -1,13 +1,25 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const MobileModeContext = createContext({
-  isMobile: null,
-  setIsMobile: () => null,
+  mobile: null,
+  setMobile: () => null,
 });
 
 export const MobileModeContextProvider = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(null);
-  const value = { isMobile, setIsMobile };
+  const [mobile, setMobile] = useState(window.innerWidth <= 500);
+  const value = { mobile, setMobile };
+
+  const handleWindowSizeChange = () => {
+    setMobile(window.innerWidth <= 500);
+  };
+
+  useEffect(() => {
+    console.log("mobile: ", mobile);
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
   return (
     <MobileModeContext.Provider value={value}>
